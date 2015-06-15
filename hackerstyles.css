@@ -1,0 +1,239 @@
+@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700,900,300italic,600italic);
+
+@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
+
+center {
+    text-align: left;
+}
+
+body {
+    font-family: 'Source Sans Pro';
+    padding-top: 50px;
+    margin-left: 180px;
+}
+
+.athing td:nth-child(2) {
+    vertical-align: top;
+    padding-right: 10px;
+    padding-top: 5px;
+    opacity: 0.99;
+}
+
+.athing td:nth-child(2):before {
+    content: "";
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: 8px;
+    left: 2px;
+    z-index: -1;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 13px solid #FF6600;
+}
+
+.votearrow:hover {
+    border-bottom-color: black;
+}
+
+.votearrow {
+    background: none;
+    width: 0;
+    height: 0;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    border-bottom: 13px solid #CCC;
+}
+
+td.subtext {
+    font-family: 'Source Sans Pro';
+    padding-bottom: 10px;
+}
+
+span.rank {
+    padding-top: 5px;
+}
+
+td.title {
+    vertical-align: middle;
+}
+
+span.sitebit.comhead {
+    font-style: italic;
+    font-family: 'Source Sans Pro';
+}
+
+td.title a:hover {
+    color: #FF6600;
+}
+
+.sitebit {
+    position: relative;
+    left: 5px;
+    top: -2px;
+    font-style: italic;
+    font-family: 'Source Sans Pro';
+    font-size: 0.8em;
+    font-weight: 200;
+    text-transform: uppercase;
+}
+
+td.title a:visited {
+    text-decoration: line-through;
+}
+
+#hnmain {
+    padding: 20px;
+    background-color: white;
+    width: 600px;
+}
+
+span.pagetop a {
+    text-transform: uppercase;
+    font-family: 'Source Sans Pro';
+}
+
+td.subtext a {
+    color: #FF6600;
+}
+
+tr:first-child td table {
+    padding: 15px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: #FF6600;
+}
+
+.pagetop a[href=news] {
+    color: white;
+    bottom: -1px;
+    margin-left: 2px;
+    position: relative;
+    margin-right: 45px;
+    font-size: 1.5em;
+}
+
+.pagetop a:not([href=news]):first-child:before {
+    content: "> ";
+    margin-right: 5px;
+    display: inline-block;
+    transform: scale(0.7,1);
+    font-weight: 900;
+}
+
+.pagetop a:not([href=news]) {
+    color: white;
+    font-size: 1.2em;
+    padding: 0px 5px;
+}
+
+.pagetop {
+    color: orange;
+    font-family: 'Source Sans Pro';
+}
+
+.pagetop a:hover {
+    color: orange;
+}
+
+.rank {
+    font-size: 3em;
+    font-family: 'Source Sans Pro';
+    font-weight: 300;
+    position: absolute;
+    top: -10px;
+    left: -50px;
+    opacity: .3;
+    color: #FF6600;
+    text-align: right;
+}
+
+.rank:after {
+    content: "";
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    width: 10px;
+    height: 20px;
+    background: white;
+}
+
+.score {
+    font-weight: 600;
+    color: rgb(68, 68, 68);
+    text-transform: capitalize;
+}
+
+.athing td {
+    padding-bottom: 5px;
+}
+
+tr.athing td {
+    position: relative;
+}
+
+.subtext {
+    font-style: italic;
+}
+
+.subtext a:nth-child(2) {
+    font-style: italic;
+}
+
+.subtext a:nth-child(2):after {
+    content: ' – ';
+}
+
+.subtext a:nth-child(3) {
+    margin-right: 3px;
+}
+
+.subtext a:last-child {
+    padding: 2px;
+    margin-left: 3px;
+    font-style: normal;
+    text-transform: uppercase;
+    font-size: 0.9em;
+    font-weight: 700;
+}
+
+td.title a {
+    font-weight: 700;
+    font-size: 1.5em;
+    font-family: 'Source Sans Pro', 'Helvetica';
+}
+
+/*
+td[bgcolor='#ff6600'] {
+    height: 10px;
+}
+
+td[bgcolor='#ff6600']:before {
+    content: "";
+    display: block;
+    width: 220px;
+    position: relative;
+    left: -200px;
+    height: 10px;
+    background-color: orange;
+}
+*/
+
+.yclinks {
+    text-transform: uppercase;
+    font-size: 0.7em;
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+}
+
+.yclinks a {
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.yclinks a:hover {
+    text-decoration: underline;
+}
+
+
