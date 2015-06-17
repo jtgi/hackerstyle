@@ -1,131 +1,97 @@
-@import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,600,700,900,300italic,600italic);
-
-@import url(http://fonts.googleapis.com/css?family=Inconsolata:400,700);
-
-center {
-    text-align: left;
+#hnmain {
+    background-color: white;
+    padding: 0 20px 20px 20px;
+    width: 800px;
 }
 
-body {
+#hnmain tbody tr:last-child center form {
+    border-left: 1px solid orange;
+    color: white;
     font-family: 'Source Sans Pro';
-    padding-top: 50px;
-    margin-left: 180px;
+    font-size: 1.2em;
+    padding-left: 10px;
+    position: absolute;
+    right: 13px;
+    text-transform: uppercase;
+    top: 15px;
+}
+
+#hnmain tbody tr:last-child center form input {
+    border-left: 1px solid orange;
+    font-family: 'Source Sans Pro';
+    margin-left: 5px;
+    padding: 2px 5px;
+    width: 145px;
+    border: 1px solid #E85D00;
+}
+
+#hnmain tbody tr:last-child center form:before {
+    background-color: #ff6600;
+    content: "";
+    display: block;
+    height: 20px;
+    left: 65px;
+    position: absolute;
+    width: 4px;
+}
+
+#hnmain tr td {
+    font-family: 'Source Sans Pro';
+}
+
+#hnmain tr:last-child td > table {
+    display: block;
+    height: 10px;
+    position: relative;
+}
+
+#hnmain tr:last-child td > table tr td[bgcolor]:after {
+    background-color: orange;
+    content: "";
+    display: block;
+    height: 10px;
+    left: -200px;
+    position: absolute;
+    top: 0px;
+    width: 222px;
+}
+
+.athing .title {
+    padding-bottom: 0px;
+}
+
+.athing td {
+    padding-bottom: 5px;
 }
 
 .athing td:nth-child(2) {
-    vertical-align: top;
-    padding-right: 10px;
-    padding-top: 5px;
     opacity: 0.99;
+    padding-right: 5px;
+    padding-top: 0px;
+    position: relative;
+    top: 4px;
+    vertical-align: top;
 }
 
 .athing td:nth-child(2):before {
+    border-bottom: 12px solid #FF6600;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
     content: "";
-    width: 0px;
     height: 0px;
-    position: absolute;
-    top: 8px;
     left: 2px;
-    z-index: -1;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 13px solid #FF6600;
-}
-
-.votearrow:hover {
-    border-bottom-color: black;
-}
-
-.votearrow {
-    background: none;
-    width: 0;
-    height: 0;
-    border-left: 7px solid transparent;
-    border-right: 7px solid transparent;
-    border-bottom: 13px solid #CCC;
-}
-
-td.subtext {
-    font-family: 'Source Sans Pro';
-    padding-bottom: 10px;
-}
-
-span.rank {
-    padding-top: 5px;
-}
-
-td.title {
-    vertical-align: middle;
-}
-
-span.sitebit.comhead {
-    font-style: italic;
-    font-family: 'Source Sans Pro';
-}
-
-td.title a:hover {
-    color: #FF6600;
-}
-
-.sitebit {
-    position: relative;
-    left: 5px;
-    top: -2px;
-    font-style: italic;
-    font-family: 'Source Sans Pro';
-    font-size: 0.8em;
-    font-weight: 200;
-    text-transform: uppercase;
-}
-
-td.title a:visited {
-    text-decoration: line-through;
-}
-
-#hnmain {
-    padding: 20px;
-    background-color: white;
-    width: 600px;
-}
-
-span.pagetop a {
-    text-transform: uppercase;
-    font-family: 'Source Sans Pro';
-}
-
-td.subtext a {
-    color: #FF6600;
-}
-
-tr:first-child td table {
-    padding: 15px;
     position: absolute;
-    top: 0;
-    left: 0;
-    background-color: #FF6600;
+    top: 3px;
+    width: 0px;
+    z-index: -1;
 }
 
-.pagetop a[href=news] {
-    color: white;
-    bottom: -1px;
-    margin-left: 2px;
-    position: relative;
-    margin-right: 45px;
-    font-size: 1.5em;
+.comhead a:first-child {
+    color: #ff6600;
 }
 
-.pagetop a:not([href=news]):first-child:before {
-    content: "> ";
-    margin-right: 5px;
-    display: inline-block;
-    transform: scale(0.7,1);
-    font-weight: 900;
-}
-
-.pagetop a:not([href=news]) {
-    color: white;
-    font-size: 1.2em;
-    padding: 0px 5px;
+.comhead a:nth-child(2):before {
+    content: " – ";
 }
 
 .pagetop {
@@ -137,103 +103,282 @@ tr:first-child td table {
     color: orange;
 }
 
-.rank {
-    font-size: 3em;
-    font-family: 'Source Sans Pro';
-    font-weight: 300;
-    position: absolute;
-    top: -10px;
-    left: -50px;
-    opacity: .3;
-    color: #FF6600;
-    text-align: right;
+.pagetop a:not([href=news]) {
+    color: white;
+    font-size: 1.2em;
+    padding: 0px 5px;
 }
 
-.rank:after {
-    content: "";
-    position: absolute;
-    right: 0px;
-    bottom: 0px;
-    width: 10px;
-    height: 20px;
-    background: white;
+.pagetop a:not([href=news]):first-child:before {
+    content: "> ";
+    display: inline-block;
+    font-weight: 900;
+    margin-right: 5px;
+    transform: scale(0.7,1);
 }
 
-.score {
-    font-weight: 600;
-    color: rgb(68, 68, 68);
-    text-transform: capitalize;
-}
-
-.athing td {
-    padding-bottom: 5px;
-}
-
-tr.athing td {
+.pagetop a[href=news] {
+    bottom: -1px;
+    color: white;
+    font-size: 1.5em;
+    margin-left: 2px;
+    margin-right: 45px;
     position: relative;
 }
 
-.subtext {
+.rank {
+    color: #FF6600;
+    display: block;
+    font-family: 'Source Sans Pro';
+    font-size: 1em;
+    font-weight: 300;
+    opacity: .3;
+    padding-right: 5px;
+    padding-top: 5px;
+    text-align: right;
+    vertical-align: top;
+}
+
+.score {
+    color: rgb(68, 68, 68);
+    font-weight: 600;
+    position: relative;
+    text-transform: capitalize;
+}
+
+.sitebit {
+    font-family: 'Source Sans Pro';
+    font-size: 0.8em;
     font-style: italic;
+    font-weight: 200;
+    left: 5px;
+    position: relative;
+    text-transform: uppercase;
+    top: -2px;
+}
+
+.subtext {
+    font-size: 0.8em;
+    font-style: italic;
+}
+
+.subtext a:last-child {
+    font-size: 0.9em;
+    font-style: normal;
+    font-weight: 700;
+    margin-left: 3px;
+    padding: 2px;
+    text-transform: uppercase;
 }
 
 .subtext a:nth-child(2) {
     font-style: italic;
 }
 
-.subtext a:nth-child(2):after {
-    content: ' – ';
-}
-
 .subtext a:nth-child(3) {
+    color: gray;
     margin-right: 3px;
 }
 
-.subtext a:last-child {
-    padding: 2px;
-    margin-left: 3px;
-    font-style: normal;
-    text-transform: uppercase;
-    font-size: 0.9em;
-    font-weight: 700;
+.subtext a:nth-child(3):before {
+    content: ' – ';
 }
 
-td.title a {
-    font-weight: 700;
-    font-size: 1.5em;
-    font-family: 'Source Sans Pro', 'Helvetica';
+.votearrow {
+    background: none;
+    border-bottom: 12px solid #CCC;
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
+    height: 0;
+    width: 0;
 }
 
-/*
-td[bgcolor='#ff6600'] {
-    height: 10px;
+.votearrow:hover {
+    border-bottom-color: black;
 }
-
-td[bgcolor='#ff6600']:before {
-    content: "";
-    display: block;
-    width: 220px;
-    position: relative;
-    left: -200px;
-    height: 10px;
-    background-color: orange;
-}
-*/
 
 .yclinks {
-    text-transform: uppercase;
-    font-size: 0.7em;
     font-family: 'Source Sans Pro';
+    font-size: 1em;
     font-weight: 600;
+    padding-left: 35px;
+    text-transform: uppercase;
 }
 
 .yclinks a {
-    margin-right: 5px;
     margin-left: 5px;
+    margin-right: 5px;
 }
 
 .yclinks a:hover {
     text-decoration: underline;
 }
 
+body {
+    font-family: 'Source Sans Pro';
+    margin-left: 188px;
+    padding-top: 50px;
+}
+
+body > center > table > tbody > tr:first-child td table {
+    background-color: #FF6600;
+    left: 0;
+    padding: 15px;
+    padding-right: 240px;
+    position: absolute;
+    top: 0;
+}
+
+body > center > table > tbody > tr:first-child td table a:hover {
+    opacity: 0.8;
+}
+
+center {
+    text-align: left;
+}
+
+/* Upvote Button */
+
+/* Comments button */
+
+/* Submitter */
+
+/* Timestamp */
+
+/* Footer */
+
+/* Search Control */
+
+/* Article Title */
+
+/* HN Header */
+
+/* Footer Separator */
+
+/* More Button */
+
+html[op="jobs"] .athing td:nth-child(2):before {
+    display: none;
+}
+
+html[op="newcomments"] .comhead {
+    font-family: 'Source Sans Pro';
+    font-size: 1em;
+}
+
+html[op="newcomments"] .comment {
+    font-family: 'Source Sans Pro';
+    font-size: 1.1em;
+}
+
+html[op="newcomments"] .storyon a {
+    color: black;
+    font-weight: 700;
+}
+
+html[op="newcomments"] .storyon a:hover {
+    color: #ff6600;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+html[op="newcomments"] > body > center > table > tbody > tr:nth-child(3) tbody tr:last-child .title {
+    padding-bottom: 15px;
+}
+
+html[op="newcomments"] > body > center > table > tbody > tr:nth-child(3) tbody tr:last-child .title a {
+    background-color: #FF6600;
+    color: white;
+    font-size: 1em;
+    padding: 2px 10px;
+    text-transform: uppercase;
+}
+
+html[op="news"] > body > center > table > tbody > tr:nth-child(3) tbody tr:last-child .title {
+    padding-bottom: 15px;
+}
+
+html[op="news"] > body > center > table > tbody > tr:nth-child(3) tbody tr:last-child .title a {
+    background-color: #FF6600;
+    color: white;
+    font-size: 1em;
+    padding: 2px 10px;
+    text-transform: uppercase;
+}
+
+html[op="news"] > body > center > table > tbody > tr:nth-child(3) tbody tr:last-child .title a:after {
+    content: " > ";
+}
+
+html[op="news"] > body > center > table > tbody > tr:nth-child(3) tbody tr:last-child .title a:hover {
+    background-color: #E75C00;
+}
+
+html[op="submit"] .pagetop b {
+    color: white;
+    font-size: 1.4em;
+    margin-left: 2px;
+}
+
+html[op="submit"] tr td {
+    font-family: 'Source Sans Pro';
+    text-transform: capitalize;
+    vertical-align: middle;
+}
+
+html[op="submit"] tr td input, html[op="submit"] tr td textarea {
+    font-family: 'Source Sans Pro';
+    margin-left: 5px;
+    padding: 5px;
+}
+
+html[op="submit"] tr td input[type="submit"] {
+    background-color: #ff6600;
+    border: none;
+    color: white;
+    font-family: 'Source Sans Pro';
+    padding: 5px 15px;
+    text-transform: uppercase;
+}
+
+span.pagetop a {
+    font-family: 'Source Sans Pro';
+    text-transform: uppercase;
+}
+
+span.rank {
+    padding-top: 5px;
+}
+
+span.sitebit.comhead {
+    font-family: 'Source Sans Pro';
+    font-style: italic;
+}
+
+td.subtext {
+    font-family: 'Source Sans Pro';
+    padding-bottom: 10px;
+}
+
+td.subtext a {
+    color: #FF6600;
+}
+
+td.title a {
+    font-family: 'Source Sans Pro', 'Helvetica';
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
+td.title a:hover {
+    color: #FF6600;
+}
+
+td.title a:visited {
+    text-decoration: line-through;
+}
+
+tr.athing td {
+    position: relative;
+}
 
