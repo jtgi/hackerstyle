@@ -1,7 +1,7 @@
 This is a set of css rules for use with stylebot and hacker news.
 
-It looks like this:
+![Imgur](http://i.imgur.com/XboCM78.gif)
 
-![Imgur](http://i.imgur.com/5l4XOHn.png)
-
-Work in Progress.
+### Todo
+- Make responsive
+- Add more styles for submit, profile pages.

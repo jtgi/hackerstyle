@@ -7,7 +7,7 @@
 #hnmain tbody tr:last-child center form {
     border-left: 1px solid orange;
     color: white;
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial';
     font-size: 1.2em;
     padding-left: 10px;
     position: absolute;
@@ -17,12 +17,12 @@
 }
 
 #hnmain tbody tr:last-child center form input {
+    border: 1px solid #E85D00;
     border-left: 1px solid orange;
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial';
     margin-left: 5px;
     padding: 2px 5px;
     width: 145px;
-    border: 1px solid #E85D00;
 }
 
 #hnmain tbody tr:last-child center form:before {
@@ -36,7 +36,7 @@
 }
 
 #hnmain tr td {
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial';
 }
 
 #hnmain tr:last-child td > table {
@@ -96,7 +96,7 @@
 
 .pagetop {
     color: orange;
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial';
 }
 
 .pagetop a:hover {
@@ -129,7 +129,7 @@
 .rank {
     color: #FF6600;
     display: block;
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial';
     font-size: 1em;
     font-weight: 300;
     opacity: .3;
@@ -147,7 +147,7 @@
 }
 
 .sitebit {
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial';
     font-size: 0.8em;
     font-style: italic;
     font-weight: 200;
@@ -198,7 +198,7 @@
 }
 
 .yclinks {
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial';
     font-size: 1em;
     font-weight: 600;
     padding-left: 35px;
@@ -215,7 +215,7 @@
 }
 
 body {
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial';
     margin-left: 188px;
     padding-top: 50px;
 }
@@ -262,12 +262,12 @@ html[op="jobs"] .athing td:nth-child(2):before {
 }
 
 html[op="newcomments"] .comhead {
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial';
     font-size: 1em;
 }
 
 html[op="newcomments"] .comment {
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial';
     font-size: 1.1em;
 }
 
@@ -298,6 +298,28 @@ html[op="news"] > body > center > table > tbody > tr:nth-child(3) tbody tr:last-
     padding-bottom: 15px;
 }
 
+input {
+    font-family: 'Source Sans Pro', 'Helvetica';
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    background-color: #ff6600;
+    border: none;
+    color: white;
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial';
+    padding: 5px 15px;
+    text-transform: uppercase;
+}
+
+input[type="submit"]:after {
+    content: " > ";
+}
+
+input[type="submit"]:hover {
+    background-color: #E75C00;
+}
+
 html[op="news"] > body > center > table > tbody > tr:nth-child(3) tbody tr:last-child .title a {
     background-color: #FF6600;
     color: white;
@@ -321,28 +343,30 @@ html[op="submit"] .pagetop b {
 }
 
 html[op="submit"] tr td {
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial';
     text-transform: capitalize;
     vertical-align: middle;
 }
 
-html[op="submit"] tr td input, html[op="submit"] tr td textarea {
-    font-family: 'Source Sans Pro';
+html[op="submit"] tr td input {
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial';
     margin-left: 5px;
     padding: 5px;
 }
 
-html[op="submit"] tr td input[type="submit"] {
-    background-color: #ff6600;
-    border: none;
-    color: white;
-    font-family: 'Source Sans Pro';
-    padding: 5px 15px;
-    text-transform: uppercase;
+textarea {
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial';
+    width: 100%;
+    padding: 5px;
+}
+
+span.comment {
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial';
+    font-size: 1.1em;
 }
 
 span.pagetop a {
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial';
     text-transform: uppercase;
 }
 
@@ -351,23 +375,17 @@ span.rank {
 }
 
 span.sitebit.comhead {
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial';
     font-style: italic;
 }
 
 td.subtext {
-    font-family: 'Source Sans Pro';
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial';
     padding-bottom: 10px;
 }
 
 td.subtext a {
     color: #FF6600;
-}
-
-td.title a {
-    font-family: 'Source Sans Pro', 'Helvetica';
-    font-size: 1.5em;
-    font-weight: 700;
 }
 
 td.title a:hover {
@@ -381,4 +399,11 @@ td.title a:visited {
 tr.athing td {
     position: relative;
 }
+
+td.title a {
+    font-family: 'Source Sans Pro', 'Helvetica Neue', 'Helvetica', 'Arial', 'Helvetica';
+    font-size: 1.5em;
+    font-weight: 700;
+}
+
 
